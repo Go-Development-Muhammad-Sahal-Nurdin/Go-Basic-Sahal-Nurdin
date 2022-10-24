@@ -15,9 +15,9 @@ func main() {
 	first := tinggiBadan[0]
 	var p *int
 	p = &first
-	fmt.Println("Given list is: ", tinggiBadan)
+	fmt.Println("Berikut ini adalah list dari tinggi badan teman saya: ", tinggiBadan)
 	res := sum(tinggiBadan)
-	fmt.Println("Average of numbers is: ", res/len(tinggiBadan))
+	fmt.Println("Rata-rata tinggi badan adalah: ", res/len(tinggiBadan))
 	fmt.Println(first)
 	fmt.Println(p)
 }
