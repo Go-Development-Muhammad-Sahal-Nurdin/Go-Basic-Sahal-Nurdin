@@ -1,25 +1,39 @@
+// MUHAMMAD SAHAL NURDIN
+// 2IA07
+// 51421075
 package main
 
 import "fmt"
 
-func sum(arr []int) int {
-	result := 0
-	for _, i := range arr {
-		result += i
-	}
-	return result
+//Ketentuan 1 : Menggunakan Struct
+type mahasiswa struct {
+	// Deklarasi Variabel tinggi
+	tinggi []float64
 }
+
 func main() {
 
-	tinggiBadan := []int{169, 165, 169, 160, 170, 170}
-	//first := tinggiBadan[0]
+	siswa := mahasiswa{}
+	// Data tinggi 10 teman saya
+	siswa.tinggi = []float64{165, 180, 169, 160, 170, 170, 162, 152, 155, 175}
+	inisiasiJumlah := 0
 
-	fmt.Println("Berikut ini adalah list dari tinggi badan teman saya: ", tinggiBadan)
-	res := sum(tinggiBadan)
-	var rataRataTinggi int = res / len(tinggiBadan)
-	fmt.Println("Rata-rata tinggi badan adalah: ", rataRataTinggi)
-	var p *int
-	p = &rataRataTinggi
-	fmt.Println(rataRataTinggi)
-	fmt.Println(p)
+	// Ketentuan 2: Penjumlahan menggunakan perulangan
+	for i := 0; i < len(siswa.tinggi); i++ {
+		inisiasiJumlah = inisiasiJumlah + int(siswa.tinggi[i])
+		// Ini akan mengakses index dari index 0 sampai 10
+		if i == 9 {
+			// Ketentuan 3: Tambahkan rata-rata menggunakan for
+			// Perulangan dibagi rata-rata
+			penjumlahanDataTinggi := float64(inisiasiJumlah)
+			rataRataTinggi := penjumlahanDataTinggi / 10
+			fmt.Printf("Rata-rata tinggi badan mahasiswa: %.1f cm\n", rataRataTinggi)
+		}
+	}
+
+	fmt.Print("------------------------------------------- \n")
+	// Ketentuan 4: akses lokasi index pertama dan keluarkan outputnya
+	fmt.Printf("Nilai pada Index pertama adalah: %.0f cm\n", *&siswa.tinggi[0])
+	fmt.Printf("Lokasi Storage Index pertama adalah: %d \n", &siswa.tinggi[0])
+
 }
