@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
-	fmt.Print("hello")
+	for i := 0; i < 5; i++ {
+		for j := i; j < 5; j++ {
+			fmt.Print(i, " ")
+		}
+		fmt.Println()
+	}
 
 }
