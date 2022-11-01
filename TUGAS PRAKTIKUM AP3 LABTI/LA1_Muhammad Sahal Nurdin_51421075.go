@@ -62,7 +62,7 @@ func main() {
 //                  fmt.Println("Obesitas")
 //          }
 
-//          // Menghitung standar bmi yakni 25 poin
+//           Menghitung standar bmi yakni 25 poin
 //          normalWeight := 25 * math.Pow(height, 2)
 //          delta := weight - normalWeight
 //          var intNormalWeight int = int(normalWeight)
