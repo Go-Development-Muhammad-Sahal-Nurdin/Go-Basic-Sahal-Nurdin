@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var i int = 1
-	for i = 1; i <= 7; i++ {
-		switch i {
+	var indeks int
+	for indeks = 1; indeks <= 7; indeks++ {
+		switch indeks {
 		case 4:
-			fmt.Printf("Absen %d sakit\n", i)
+			fmt.Printf("Absen %d sakit\n", indeks)
 		case 6:
-			fmt.Printf("Absen %d izin\n", i)
+			fmt.Printf("Absen %d izin\n", indeks)
 		default:
-			fmt.Printf("Absen %d hadir \n", i)
+			fmt.Printf("Absen %d hadir \n", indeks)
 		}
 	}
 }
