@@ -7,6 +7,7 @@ func main() {
 	fmt.Println("Sahal Nurdin")
 	fmt.Println("Muhammad Sahal Nurdin")
 	fmt.Println(len("Muhammad Sahal Nurdin"))
+	// SLICING
 	fmt.Println("Muhammad Sahal Nurdin"[0:5])
 	fmt.Println("Muhammad Sahal Nurdin"[10])
 
