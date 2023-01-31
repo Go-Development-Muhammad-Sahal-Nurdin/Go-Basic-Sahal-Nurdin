@@ -16,6 +16,7 @@ func main() {
 	// Membuat array langsung
 	// jika array sudah dibuat ukurannya maka tidak bisa ditambahkan lagi elemennya
 
+	// BIAR GA RIBET PAKAI SEPERTI INI
 	var values = [3]int{
 		90,
 		95,
@@ -27,6 +28,7 @@ func main() {
 	fmt.Println(values[1])
 	fmt.Println(values[2])
 
+	// LEN PANJANG ARRAYNYA BUKAN JUMLAH DATANYA YANG ADA
 	fmt.Println(len(names))
 	fmt.Println(len(values))
 
