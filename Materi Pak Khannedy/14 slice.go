@@ -25,11 +25,14 @@ func main() {
 	// months[5] = "Diubah"
 	// fmt.Println(slice1)
 
+	// JIKA SLICE DIRUBAH MAKA ARRAY IKUT BERUBAH
 	// slice1[0] = "Mei lagi"
 	// fmt.Println(months)
 
 	var slice2 = months[10:]
 	fmt.Println(slice2)
+
+
 	// Jika capacity sudah penuh maka akan membuat array baru
 
 	var slice3 = append(slice2, "sahal")
@@ -40,6 +43,7 @@ func main() {
 	fmt.Println(slice2)
 	fmt.Println(months)
 
+	// MEMBUAT SLICE BARU 
 	newSlice := make([]string, 2, 5)
 
 	newSlice[0] = "Sahal"
@@ -49,6 +53,7 @@ func main() {
 	fmt.Println(len(newSlice))
 	fmt.Println(cap(newSlice))
 
+	// PSTIKAN UKURANNYA SAMA
 	copySlice := make([]string, len(newSlice), cap(newSlice))
 	copy(copySlice, newSlice)
 	fmt.Println(copySlice)
